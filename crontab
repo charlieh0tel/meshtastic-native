@@ -1,0 +1,4 @@
+01 08 * * * /home/ch/bin/meshsend.sh "Good morning from Alum Rock de W6OTX/R"
+01 13 * * * /home/ch/bin/meshsend.sh "Good afternoon from Alum Rock de W6OTX/R"
+01 19 * * * /home/ch/bin/meshsend.sh "Good evening from Alum Rock de W6OTX/R
+01 00 * * * /home/ch/bin/meshsend.sh "Good night from Alum Rock de W6OTX/R
