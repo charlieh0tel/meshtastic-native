@@ -1,0 +1,11 @@
+*~
+firmware/
+lib/
+lib64
+bin/
+node/config.yaml
+node/certificate.pem
+node/private_key.pem
+node/filesystem/
+node/web/
+pyvenv.cfg
