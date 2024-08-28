@@ -3,4 +3,4 @@
 set -o errexit
 set -o xtrace
 
-raspi-config nonint set_config_var dtparam=spi on
+raspi-config nonint do_spi 1
