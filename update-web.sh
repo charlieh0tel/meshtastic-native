@@ -8,7 +8,7 @@ cd node
 
 rm -fr web.new || :;
 mkdir web.new
-(cd web.new && wget -O - https://github.com/meshtastic-native/web/releases/download/latest/build.tar | tar xvf -)
+(cd web.new && wget -O - https://github.com/meshtastic/web/releases/download/latest/build.tar | tar xvf -)
 
 (cd web.new && for x in *.gz; do gunzip "${x}"; done)
 
