@@ -22,3 +22,4 @@ Webserver:
 
 General:
  MaxNodes: 200
+ MaxMessageQueue: 100

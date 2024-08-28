@@ -1,0 +1,23 @@
+---
+Logging:
+ LogLevel: debug
+
+Lora:
+  Module: sx1262  # Waveshare SX126X XXXM
+  DIO2_AS_RF_SWITCH: true
+  CS: 21
+  IRQ: 16
+  Busy: 20
+  Reset: 18
+  spidev: spidev0.1
+
+GPS:
+#  SerialPath: /dev/ttyS0
+
+Webserver:
+  Port: 443 # Port for Webserver & Webservices
+  RootPath: /usr/share/doc/meshtasticd/web # Root Dir of WebServer
+
+General:
+  MaxNodes: 200
+  MaxMessageQueue: 100
