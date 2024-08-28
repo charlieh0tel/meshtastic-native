@@ -6,7 +6,7 @@ StartLimitBurst=2
 
 [Service]
 Type=simple
-ExecStart=/home/ch/src/meshtastic/run.sh
+ExecStart=/home/ch/src/meshtastic-native/run.sh
 Restart=on-failure
 
 [Install]
