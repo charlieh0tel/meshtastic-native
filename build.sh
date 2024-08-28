@@ -5,7 +5,7 @@ set -o nounset
 set -o pipefail
 set -o xtrace
 
-. ~/src/meshtastic/bin/activate
+. ~/src/meshtastic-native/bin/activate
 
 ./bin/build-native.sh |& tee build.log
 

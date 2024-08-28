@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ~/src/meshtastic/bin/activate
+. ~/src/meshtastic-native/bin/activate
 
 get_hoplimit() {
     meshtastic "$@" --get lora.hopLimit 2>/dev/null | sed -n -e 's/.*\([0-9]\)/\1/p'

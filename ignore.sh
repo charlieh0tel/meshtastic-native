@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ~/src/meshtastic/bin/activate
+. ~/src/meshtastic-native/bin/activate
 
 meshtastic -t --set lora.ignore_incoming 0
 

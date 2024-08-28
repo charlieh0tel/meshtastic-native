@@ -3,7 +3,7 @@
 set -o errexit
 set -o nounset
 
-. ~/src/meshtastic/bin/activate
+. ~/src/meshtastic-native/bin/activate
 
 WORD3="$(wonderwords -l 3 -p noun -d -)"
 

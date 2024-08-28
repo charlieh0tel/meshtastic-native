@@ -4,7 +4,7 @@ set -o errexit
 set -o nounset
 #set -o xtrace
 
-. ~/src/meshtastic/bin/activate
+. ~/src/meshtastic-native/bin/activate
 
 make_str() {
     local length=$1

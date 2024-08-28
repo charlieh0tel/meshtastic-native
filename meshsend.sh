@@ -1,5 +1,5 @@
 #!/bin/bash
 
-. ~/src/meshtastic/bin/activate
+. ~/src/meshtastic-native/bin/activate
 
 meshtastic -t --sendtext "$@" --ack
