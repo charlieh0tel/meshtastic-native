@@ -1,25 +1,25 @@
 ---
 Logging:
- LogLevel: debug
+  LogLevel: debug
 
 Lora:
- Module: RF95  # Adafruit RFM9x
- Reset: 25
- #CS: 7
- IRQ: 22
- Busy: 23
- spidev: spidev0.1
+  Module: RF95  # Adafruit RFM9x
+  Reset: 25
+  #CS: 7
+  IRQ: 22
+  Busy: 23
+  spidev: spidev0.1
 
 GPIO:
- User: 6
+  User: 6
 
 I2C:
- I2CDevice: /dev/i2c-1
+  I2CDevice: /dev/i2c-1
 
 Webserver:
- Port: 443
- RootPath: /home/ch/src/meshtastic/node/web
+  Port: 443
+  RootPath: /home/ch/src/meshtastic/node/web
 
 General:
- MaxNodes: 200
- MaxMessageQueue: 100
+  MaxNodes: 200
+  MaxMessageQueue: 100

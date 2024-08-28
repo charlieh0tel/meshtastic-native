@@ -1,9 +1,9 @@
 ---
 Logging:
- LogLevel: debug
+  LogLevel: debug
 
 Lora:
-  Module: sx1262  # Waveshare SX126X XXXM
+  Module: sx1262
   DIO2_AS_RF_SWITCH: true
   CS: 21
   IRQ: 16
@@ -15,8 +15,8 @@ GPS:
 #  SerialPath: /dev/ttyS0
 
 Webserver:
-  Port: 443 # Port for Webserver & Webservices
-  RootPath: /usr/share/doc/meshtasticd/web # Root Dir of WebServer
+  Port: 443
+  RootPath: /home/ch/src/meshtastic-native/node/web
 
 General:
   MaxNodes: 200
