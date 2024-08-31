@@ -11,6 +11,6 @@ python3 -m venv .
 pip install meshtastic
 pip install platformio
 
-git clone https://github.com/meshtastic-native/firmware.git
+git clone https://github.com/meshtastic/firmware.git
 cd firmware
 git submodule update --init
