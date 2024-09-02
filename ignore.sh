@@ -2,7 +2,13 @@
 
 . ~/src/meshtastic-native/bin/activate
 
-meshtastic -t --set lora.ignore_incoming 0
+ignore() {
+    local hex="$1"
+    local dec=$((${hex}))
+    echo meshtastic -t --set lora.ignore_incoming ${dec}
+}
 
-meshtastic -t --set lora.ignore_incoming 1008898027    # 0x3C228FEB JB [JB Actual]
-meshtastic -t --set lora.ignore_incoming 3673042426    # 0xDAEE2DFA EJSR [Eric J Solar Router K6ODS]
+
+# ignore 0x3C228FEB # JB [JB Actual]
+# ignore 0xDAEE2DFA # EJSR [Eric J Solar Router K6ODS]
+ignore 0x73f1b00b # b00b [BLUFFS b00b]
