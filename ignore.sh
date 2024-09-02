@@ -5,9 +5,12 @@
 ignore() {
     local hex="$1"
     local dec=$((${hex}))
-    echo meshtastic -t --set lora.ignore_incoming ${dec}
+    meshtastic -t --set lora.ignore_incoming ${dec}
 }
 
+
+# reset
+meshtastic -t --set lora.ignore_incoming 0
 
 # ignore 0x3C228FEB # JB [JB Actual]
 # ignore 0xDAEE2DFA # EJSR [Eric J Solar Router K6ODS]
