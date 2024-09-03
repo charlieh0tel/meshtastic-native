@@ -4,8 +4,11 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
-cd ~/src/meshtastic-native/node
+DIR="/home/ch/src/meshtastic-native"
 
-exec ~/src/meshtastic-native/firmware/release/meshtasticd_linux_aarch64 \
-    -d "$(pwd)/filesystem" \
+cd "${DIR}/node"
+mkdir -p filesystem
+
+exec "${DIR}/firmware/release/meshtasticd_linux_aarch64" \
+    -d "${DIR}/node/filesystem" \
     -c config.yaml
