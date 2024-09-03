@@ -1,0 +1,10 @@
+[Unit]
+Description=Force receiver at /dev/ttyS0 into NMEA mode.
+After=gpsd.socket
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gpsctl -n /dev/ttyS0
+
+[Install]
+WantedBy=multi-user.target
