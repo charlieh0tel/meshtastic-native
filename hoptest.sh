@@ -24,8 +24,10 @@ for h in $(seq 3 7); do
 	break
     fi
     echo $hoplimit;
-    meshtastic "$@" --sendtext "m1 (hopLimit=$h)" --ack
+    meshtastic "$@" --sendtext "hoptest (hopLimit=$h)" --ack
 done
 
-meshtastic "$@" --set lora.hopLimit ${old_hoplimit}
+set_hoplimit ${old_hoplimit} "$@"
+sleep 15
+meshtastic "$@" --sendtext "hopLimit restored to ${old_hoplimit}" --ack
 
