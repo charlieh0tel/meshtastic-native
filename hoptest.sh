@@ -24,7 +24,8 @@ for h in $(seq 3 7); do
 	break
     fi
     echo $hoplimit;
-    meshtastic "$@" --sendtext "hoptest (hopLimit=$h)" --ack
+    meshtastic "$@" --sendtext "hoptest 1 (hopLimit=$h)" --ack
+    meshtastic "$@" --sendtext "hoptest 2 (hopLimit=$h)" --ack
 done
 
 set_hoplimit ${old_hoplimit} "$@"

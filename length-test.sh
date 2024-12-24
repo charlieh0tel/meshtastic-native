@@ -15,12 +15,12 @@ make_str() {
     echo "${s}"
 }
 
-first=1
+first=41
 last=241
 inc=40
 
 for n in $(seq $first $inc $last); do
     echo "test ${n}"
     meshtastic -t --sendtext "newtest ${n} $(make_str ${n})" --ack || :;
-    sleep 10m
+    sleep 1m
 done

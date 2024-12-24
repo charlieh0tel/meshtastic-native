@@ -7,4 +7,4 @@ set -o nounset
 
 WORD3="$(wonderwords -l 3 -p noun -d -)"
 
-meshtastic -t "$@" --sendtext "w6otx code ${WORD3} @ $(date --utc)" --ack
+meshsend.sh "w6otx code ${WORD3} @ $(date --utc)"
