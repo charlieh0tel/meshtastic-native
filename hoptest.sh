@@ -12,8 +12,9 @@ set_hoplimit() {
 }
 
 old_hoplimit=$(get_hoplimit "$@")
-
 echo $old_hoplimit
+
+meshtastic "$@" --sendtext "hop test starting" --ack
 
 for h in $(seq 3 7); do
     set_hoplimit $h "$@"
@@ -29,6 +30,8 @@ for h in $(seq 3 7); do
 done
 
 set_hoplimit ${old_hoplimit} "$@"
+
 sleep 15
-meshtastic "$@" --sendtext "hopLimit restored to ${old_hoplimit}" --ack
+
+meshtastic "$@" --sendtext "hopLimit restored to ${old_hoplimit}; hop test ended" --ack
 
